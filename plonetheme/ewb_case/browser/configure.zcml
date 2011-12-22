@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plone">
+
+    <!-- 'EWB Case Theme' Zope 3 browser layer -->
+    <interface
+        interface=".interfaces.IThemeSpecific"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="EWB Case Theme"
+        />
+
+    <!-- ewb_case  special view -->
+    <browser:page
+        for="*"
+        name="ewb_caseview"
+        class=".ewb_caseview.ThemeView"
+        permission="zope.Public"
+        allowed_interface=".interfaces.IThemeView"
+        />                
+
+</configure>
