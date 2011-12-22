@@ -1,0 +1,14 @@
+# Temp Files #
+##############
+*~
+
+# Compiled Files #
+##################
+*.pyc
+
+# OS Files #
+############
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
