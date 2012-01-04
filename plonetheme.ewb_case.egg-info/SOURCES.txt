@@ -27,6 +27,7 @@ plonetheme/ewb_case/profiles/default/jsregistry.xml
 plonetheme/ewb_case/profiles/default/metadata.xml
 plonetheme/ewb_case/profiles/default/plonetheme.ewb_case_various.txt
 plonetheme/ewb_case/profiles/default/skins.xml
+plonetheme/ewb_case/profiles/default/viewlets.xml
 plonetheme/ewb_case/tests/__init__.py
 plonetheme/ewb_case/tests/base.py
 plonetheme/ewb_case/tests/test_doctests.py
