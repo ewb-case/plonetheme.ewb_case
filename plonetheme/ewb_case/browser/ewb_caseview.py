@@ -1,20 +1,12 @@
 from zope.interface import implements
 from zope.component import getMultiAdapter
 
-from plone.app.layout.viewlets.common import LogoViewlet
-
 from Acquisition import aq_inner
 from Products.Five import BrowserView
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from plonetheme.ewb_case.browser.interfaces import IThemeView
 
 _marker = []
-
-
-class LogoView(LogoViewlet):
-    render = ViewPageTemplateFile("templates/logo.pt")
-
 
 class ThemeView(BrowserView):
     implements(IThemeView)

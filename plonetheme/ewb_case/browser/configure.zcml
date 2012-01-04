@@ -19,14 +19,15 @@
         allowed_interface=".interfaces.IThemeView"
         />  
               
-    <!-- ewb_case  logo view -->
+    <!-- Logo -->
     <browser:viewlet    
         name="plone.logo"
         for="*"
         manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
         permission="zope2.View"
         layer=".interfaces.IThemeSpecific"
-        class=".ewb_caseview.LogoView"
+        template="./templates/plone.logo.pt"
+        class="plone.app.layout.viewlets.common.LogoViewlet"
         />
         
 

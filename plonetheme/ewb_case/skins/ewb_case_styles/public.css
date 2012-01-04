@@ -175,18 +175,21 @@ q {
     white-space: normal;
     text-align: center;
     color: black;
-    border-right: 1px solid #e3e3e3;
-    border-left: 1px solid #e3e3e3;
 }
 
-#portal-globalnav .selected a,
+#portal-globalnav a {
+    color: white;
+}
+#portal-globalnav .selected a {
+    background: #095AA6;
+    color: white;
+}
 #portal-globalnav a:hover {
     background: #d3d3d3;
-    color: White;
 }
+
 #portal-globalnav .selected a:hover {
-    background: #ddd;
-    color: #205c90;
+    color: #095AA6;
 }
 
 #portal-personaltools-wrapper {
