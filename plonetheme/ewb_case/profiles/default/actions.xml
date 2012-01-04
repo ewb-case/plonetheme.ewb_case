@@ -26,4 +26,9 @@
       <property name="visible">False</property>
     </object>
   </object>
+  <object name="portal_tabs" meta_type="CMF Action Category">
+    <object name="index_html" meta_type="CMF Action" i18n:domain="plone">
+      <property name="visible">False</property>
+    </object>
+  </object>
 </object>
