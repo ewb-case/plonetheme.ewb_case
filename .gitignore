@@ -1,10 +1,41 @@
 # Temp Files #
 ##############
 *~
+*.tmp*
 
-# Compiled Files #
-##################
+# Build #
+#########
+bin
+build
+
+# Project Files #
+################
+.project
+.pydevproject
+
+# Python Files #
+################
 *.pyc
+*.egg-info
+*.egg
+*.EGG
+*.EGG-INFO
+develop-eggs
+downloads
+eggs
+fake-eggs
+parts
+dist
+.installed.cfg
+.mr.developer.cfg
+*.pyc
+*.pyo
+
+# Version Control #
+###################
+.hg
+.bzr
+.svn
 
 # OS Files #
 ############
