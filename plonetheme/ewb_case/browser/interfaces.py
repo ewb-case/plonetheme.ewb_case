@@ -10,3 +10,4 @@ class IThemeView(Interface):
 
     def getColumnsClass():
         """ Returns the CSS class based on columns presence. """
+

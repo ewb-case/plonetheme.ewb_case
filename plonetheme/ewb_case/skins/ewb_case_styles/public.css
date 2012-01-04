@@ -33,6 +33,7 @@ body {
     font: 100% Arial, FreeSans, sans-serif;
     background: White;
     color: Black;
+    min-width: 960px;
     /* width: 58em; margin: 1em auto; */
 }
 
@@ -97,41 +98,101 @@ q {
 #portal-header {
     position: relative;
     z-index: 2;
+    font-family: serif;
+}
+
+#portal-logo-bar {
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+#portal-logo-bar-background {
+    width: 100%;
+    height: 42px;
+    background-image: url(logo-bar-background.png);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #portal-logo {
     display: inline-block;
-    margin: 1.375em 0;
+    width: 900px;
+    height: 40px;
+    margin: 0;
+    position: relative;
+    font-size: 1.6em;
+    text-align: center;
+    color: black;
+    clear: both;
 }
 
+.portal-logo-text {
+    height: 100%;
+    position: relative;
+}
+
+.portal-logo-text > div {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0.25em;
+}
+
+#portal-logo-left-text {
+    float: left;
+    width: 40%;
+}
+
+#portal-logo-icon {
+    width: 20%;
+    float: left;
+}
+
+#portal-logo-right-text {
+    float: left;
+    width: 40%;
+}
+
+
 #portal-globalnav {
+    display: block;
     clear: both;
-    font-size: 80%;
-    background: #ddd;
+    font-size: .8em;
+    background-color: white;
     /* ensure top navigation dont touches portlets, content etc.. #10491 */
     margin: 0 0 1em 0;
+    border-bottom: 1px solid black;
 }
 #portal-globalnav li {
 }
 #portal-globalnav li a {
     display: inline-block;
-    padding: 0.5em 1em 2em 1em;
-    background: #ddd;
-    min-width: 6em;
+    padding: 0.3em 1em 0.3em 1em;
+    background: white;
+    min-width: 5em;
     white-space: normal;
-    /*TODO: Once we have removed the whitespace from the nav template, this can be put back*/
-    /*border-bottom: 0.1em solid White;*/
-    border-right: 0.1em solid white;
+    text-align: center;
+    color: black;
+    border-right: 1px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
 }
 
 #portal-globalnav .selected a,
 #portal-globalnav a:hover {
-    background: #205c90;
+    background: #d3d3d3;
     color: White;
 }
 #portal-globalnav .selected a:hover {
     background: #ddd;
     color: #205c90;
+}
+
+#portal-personaltools-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 #portal-personaltools {
