@@ -156,15 +156,23 @@ q {
 }
 
 
-#portal-globalnav {
+#portal-tabs {
     display: block;
     clear: both;
     font-size: .8em;
     background-color: white;
-    /* ensure top navigation dont touches portlets, content etc.. #10491 */
     margin: 0 0 1em 0;
     border-bottom: 1px solid black;
 }
+
+#left_portal_tabs,
+#right_portal_tabs {
+    width: 50%;
+    float: left;
+}
+
+
+
 #portal-globalnav li {
 }
 #portal-globalnav li a {
@@ -395,8 +403,11 @@ dl.portletError {
 dl.portlet dt,
 div.portletAssignments div.portletHeader {
     padding: 0.42em 1em;
-    background: #ddd;
+    background: #095AA6;
+    color: white;
     line-height: normal;
+    border-bottom: 2px solid #07447D;
+    border-top: 1px solid #6B9CCA;
 }
 dl.portlet dt.hiddenStructure {
     padding: 0;
@@ -417,7 +428,7 @@ div.portletAssignments .managedPortletActions a {
 dl.portlet dt a:link,
 dl.portlet dt a:visited,
 dl.portlet dt a:hover {
-    color: black;
+    color: white;
     display: block;
     border: none;
 }
