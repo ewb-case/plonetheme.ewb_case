@@ -53,6 +53,13 @@
         factory=".viewlets.SecondaryNav"
         provides="zope.contentprovider.interfaces.IContentProvider"
         />
+   
+    <browser:page
+      for="*"
+      name="plonetheme.ewb_case.secondary_tabs_view"
+      class=".navigation.SecondaryNavigationTabs"
+      permission="zope.Public"
+      />
         
   <!-- Control Panel -->
     <browser:page

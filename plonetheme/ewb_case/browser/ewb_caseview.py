@@ -4,14 +4,11 @@ from zope.component import getMultiAdapter
 from Acquisition import aq_inner
 from Products.Five import BrowserView
 
-from plone.app.layout.viewlets.common import GlobalSectionsViewlet
-
 from plonetheme.ewb_case.browser.interfaces import IThemeView
+
 
 _marker = []
 
-class SecondaryNav(GlobalSectionsViewlet):
-    pass
 
 class ThemeView(BrowserView):
     implements(IThemeView)

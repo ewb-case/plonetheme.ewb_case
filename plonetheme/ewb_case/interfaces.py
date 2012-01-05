@@ -12,7 +12,7 @@ class IEwbCaseThemeSettings(Interface):
     """Global EWB Case Theme settings stored in configuration registry.
     """
     
-    second_nav_source = field.Id(
+    second_nav_source = field.TextLine(
             title=_(u"Second Nav Source"),
             required=False
     )
