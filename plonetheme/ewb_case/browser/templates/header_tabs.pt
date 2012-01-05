@@ -3,6 +3,6 @@
         <tal:block tal:replace="structure provider:plonetheme.ewb_case.left_portal_tabs" />
     </div>
     <div id="right_portal_tabs">
-        right
+        <tal:block tal:replace="structure provider:plonetheme.ewb_case.right_portal_tabs" />
     </div>
 </div>

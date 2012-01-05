@@ -39,20 +39,18 @@
         layer=".interfaces.IThemeSpecific"
         template="./templates/header_tabs.pt"
         />
-        
-    <browser:viewlet    
-        name="plonetheme.ewb_case.right_portal_tabs"
-        for="*"
-        manager="plone.app.layout.viewlets.interfaces.IPortalTabs"
-        permission="zope2.View"
-        layer=".interfaces.IThemeSpecific"
-        class=".ewb_caseview.SecondaryNav"
-        />
                 
     <adapter
         name="plonetheme.ewb_case.left_portal_tabs"
         for="* zope.publisher.interfaces.browser.IDefaultBrowserLayer *"
         factory="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+        provides="zope.contentprovider.interfaces.IContentProvider"
+        />
+        
+    <adapter
+        name="plonetheme.ewb_case.right_portal_tabs"
+        for="* zope.publisher.interfaces.browser.IDefaultBrowserLayer *"
+        factory=".viewlets.SecondaryNav"
         provides="zope.contentprovider.interfaces.IContentProvider"
         />
         
