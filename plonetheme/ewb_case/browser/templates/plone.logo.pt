@@ -1,0 +1,26 @@
+<div metal:define-macro="portal_logo"
+  id="portal-logo-bar">
+    
+    <div id="portal-logo-bar-background"></div>
+    
+    <a id="portal-logo"
+      title="Home"
+      accesskey="1"
+      tal:attributes="href view/navigation_root_url;
+      title view/navigation_root_title"
+      i18n:domain="plone"
+      i18n:attributes="title">
+        <div id="portal-logo-left-text" class="portal-logo-text">
+            <div>Case Western Reserve University</div>
+        </div>
+        <div id="portal-logo-icon">
+            <object data="logo.svg" type="image/svg+xml">
+                <img src="logo.png" alt=""
+                  tal:replace="structure view/logo_tag" />
+            </object> 
+        </div>
+        <div id="portal-logo-right-text" class="portal-logo-text">
+            <div>Engineers Without Borders</div>
+        </div>
+    </a>
+</div>

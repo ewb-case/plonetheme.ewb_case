@@ -25,7 +25,7 @@ setup(name='plonetheme.ewb_case',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          # -*- Extra requirements: -*-
+          'plone.app.registry',
       ],
       entry_points="""
       # -*- Entry points: -*-

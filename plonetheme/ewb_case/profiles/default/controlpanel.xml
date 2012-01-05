@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel"
+  meta_type="Plone Control Panel Tool"
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  i18n:domain="plonetheme.ewb_case"
+  purge="False">
+  
+    <configlet
+        title="EWB Case Theme"
+        action_id="ewb_case"
+        appId="plonetheme.ewb_case"
+        category="Products"
+        condition_expr=""
+        url_expr="string:${portal_url}/@@ewb_case_theme-settings"
+        visible="True"
+        i18n:attributes="title">
+            <permission>Manage portal</permission>
+    </configlet>
+    
+</object>

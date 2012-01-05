@@ -39,6 +39,15 @@
         layer=".interfaces.IThemeSpecific"
         template="./templates/header_tabs.pt"
         />
+        
+    <browser:viewlet    
+        name="plonetheme.ewb_case.right_portal_tabs"
+        for="*"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTabs"
+        permission="zope2.View"
+        layer=".interfaces.IThemeSpecific"
+        class=".ewb_caseview.SecondaryNav"
+        />
                 
     <adapter
         name="plonetheme.ewb_case.left_portal_tabs"
@@ -46,6 +55,13 @@
         factory="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
         provides="zope.contentprovider.interfaces.IContentProvider"
         />
-    
+        
+  <!-- Control Panel -->
+    <browser:page
+        name="ewb_case_theme-settings"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".controlpanel.EwbCaseThemeSettingsControlPanel"
+        permission="cmf.ManagePortal"
+        />
 
 </configure>

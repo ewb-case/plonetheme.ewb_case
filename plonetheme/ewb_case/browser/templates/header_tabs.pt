@@ -1,0 +1,8 @@
+<div id="portal-tabs" class="clearfix">
+    <div id="left_portal_tabs">
+        <tal:block tal:replace="structure provider:plonetheme.ewb_case.left_portal_tabs" />
+    </div>
+    <div id="right_portal_tabs">
+        right
+    </div>
+</div>
