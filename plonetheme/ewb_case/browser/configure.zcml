@@ -32,40 +32,20 @@
         />
     
    <browser:viewlet    
-        name="plonetheme.ewb.header_tabs"
+        name="plonetheme.ewb_case.header_tabs"
         for="*"
         manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
         permission="zope2.View"
         layer=".interfaces.IThemeSpecific"
         template="./templates/header_tabs.pt"
         />
-        
-    <browser:viewletManager    
-        name="plonetheme.ewb.portal_tabs"
-        for="*"
-        permission="zope2.View"
-        provides=".interfaces.IPortalTabs"
-        layer=".interfaces.IThemeSpecific"
-        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+                
+    <adapter
+        name="plonetheme.ewb_case.left_portal_tabs"
+        for="* zope.publisher.interfaces.browser.IDefaultBrowserLayer *"
+        factory="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+        provides="zope.contentprovider.interfaces.IContentProvider"
         />
-        
-    <browser:viewlet    
-        name="plonetheme.ewb.left_portal_tabs"
-        for="*"
-        manager=".interfaces.IPortalTabs"
-        permission="zope2.View"
-        layer=".interfaces.IThemeSpecific"
-        template="./templates/left_portal_tabs.pt"
-        class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
-        />
-        
-    <browser:viewlet    
-        name="plonetheme.ewb.right_portal_tabs"
-        for="*"
-        manager=".interfaces.IPortalTabs"
-        permission="zope2.View"
-        layer=".interfaces.IThemeSpecific"
-        template="./templates/right_portal_tabs.pt"
-        />
+    
 
 </configure>
