@@ -30,11 +30,11 @@ iframe { border-width: 0; border-style:none; }
 /* @group Basics */
 
 body {
-    font: 100% Arial, FreeSans, sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12pt;
     background: White;
     color: Black;
     min-width: 960px;
-    /* width: 58em; margin: 1em auto; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -98,7 +98,8 @@ q {
 #portal-header {
     position: relative;
     z-index: 2;
-    font-family: serif;
+    border-bottom: 0;
+    border-top: 0;
 }
 
 #portal-logo-bar {
@@ -123,7 +124,7 @@ q {
     height: 40px;
     margin: 0;
     position: relative;
-    font-size: 1.6em;
+    font-size: 1.4em;
     text-align: center;
     color: black;
     clear: both;
@@ -155,65 +156,85 @@ q {
     width: 40%;
 }
 
-
-#portal-tabs {
-    display: block;
+#portal-globalnav {
     clear: both;
     font-size: .8em;
-    background-color: white;
-    margin: 0 0 1em 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #999;
+    margin-bottom: 1em;
+    text-align: center;
 }
 
 #left-portal-tabs,
 #right-portal-tabs {
     width: 50%;
     float: left;
-    text-align:center;
+}
+
+#right-portal-tabs  {
+    text-align: right;
+}
+
+#left-portal-tabs {
+    text-align: left;
 }
 
 #left-portal-tabs .portalTabs {
-    margin-right: 1em;    
+    margin-left: 0.5em;
 }
 
-#right-portal-tabs {
-    
+#right-portal-tabs .portalTabs {
+    margin-right: 0.5em;
 }
 
 
-#portal-globalnav {
+#portal-globalnav .portalTabs {
+    display: inline-block;
     clear: both;
-    font-size: .8em;
-    border-bottom: 1px solid black;
-    margin-bottom: 1em;
 }
 
 .portalTabs li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid #999;
 }
+
+.portalTabs li:last-child {
+    border-right: 1px solid #999;
+}
+
+.portalTabs .selected {
+    border-bottom: 1px solid white;
+    margin-bottom: -1px;
+    font-style: italic;
+}
+
 .portalTabs li a {
     display: inline-block;
     padding: 0.3em 1em 0.3em 1em;
-    background: white;
+    background: #f4f4f4;
     min-width: 5em;
     white-space: normal;
     text-align: center;
+    color: #3a3a3a;
+}
+.portalTabs li a:hover {
+    background: white;
+    color: black;
+    border-bottom: 1px solid white;
+    margin-bottom: -1px;
+}
+
+.portalTabs li.selected a {
+    background: white;
     color: black;
 }
-
-.portalTabs a {
-    color: white;
-}
-.portalTabs .selected a {
-    background: #095AA6;
-    color: white;
-}
-.portalTabs a:hover {
-    background: #d3d3d3;
-}
-
-.portalTabs .selected a:hover {
+.portalTabs li.selected a:hover {
     color: #095AA6;
 }
+
+
 
 #portal-personaltools-wrapper {
     width: 100%;
