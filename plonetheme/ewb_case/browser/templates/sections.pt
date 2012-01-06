@@ -3,7 +3,7 @@
   tal:condition="portal_tabs"
   i18n:domain="plone">
 
-    <ul class="portal-tabs"
+    <ul class="portalTabs"
       tal:define="selected_tab python:view.selected_portal_tab">
         <tal:tabs tal:repeat="tab portal_tabs">
             <li tal:define="tid tab/id"

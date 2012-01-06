@@ -165,10 +165,19 @@ q {
     border-bottom: 1px solid black;
 }
 
-#left_portal_tabs,
-#right_portal_tabs {
+#left-portal-tabs,
+#right-portal-tabs {
     width: 50%;
     float: left;
+    text-align:center;
+}
+
+#left-portal-tabs .portalTabs {
+    margin-right: 1em;    
+}
+
+#right-portal-tabs {
+    
 }
 
 
@@ -176,11 +185,12 @@ q {
     clear: both;
     font-size: .8em;
     border-bottom: 1px solid black;
+    margin-bottom: 1em;
 }
 
-.portal-tabs li {
+.portalTabs li {
 }
-.portal-tabs li a {
+.portalTabs li a {
     display: inline-block;
     padding: 0.3em 1em 0.3em 1em;
     background: white;
@@ -190,18 +200,18 @@ q {
     color: black;
 }
 
-.portal-tabs a {
+.portalTabs a {
     color: white;
 }
-.portal-tabs .selected a {
+.portalTabs .selected a {
     background: #095AA6;
     color: white;
 }
-.portal-tabs a:hover {
+.portalTabs a:hover {
     background: #d3d3d3;
 }
 
-.portal-tabs .selected a:hover {
+.portalTabs .selected a:hover {
     color: #095AA6;
 }
 
