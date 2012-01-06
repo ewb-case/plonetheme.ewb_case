@@ -172,10 +172,15 @@ q {
 }
 
 
-
-#portal-globalnav li {
+#portal-globalnav {
+    clear: both;
+    font-size: .8em;
+    border-bottom: 1px solid black;
 }
-#portal-globalnav li a {
+
+.portal-tabs li {
+}
+.portal-tabs li a {
     display: inline-block;
     padding: 0.3em 1em 0.3em 1em;
     background: white;
@@ -185,18 +190,18 @@ q {
     color: black;
 }
 
-#portal-globalnav a {
+.portal-tabs a {
     color: white;
 }
-#portal-globalnav .selected a {
+.portal-tabs .selected a {
     background: #095AA6;
     color: white;
 }
-#portal-globalnav a:hover {
+.portal-tabs a:hover {
     background: #d3d3d3;
 }
 
-#portal-globalnav .selected a:hover {
+.portal-tabs .selected a:hover {
     color: #095AA6;
 }
 

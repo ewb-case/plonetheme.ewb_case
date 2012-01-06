@@ -1,11 +1,24 @@
 from zope.component import getMultiAdapter
 
-from Acquisition import aq_base, aq_inner
+from Acquisition import aq_inner
+
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from plone.app.layout.viewlets.common import GlobalSectionsViewlet
 
 
-class SecondaryNav(GlobalSectionsViewlet):
+class PrimarySectionsViewlet(GlobalSectionsViewlet):
+    """Viewlet for the primary navigation tabs.
+    """
+    
+    index = ViewPageTemplateFile('templates/sections.pt')
+
+
+class SecondarySectionsViewlet(GlobalSectionsViewlet):
+    """Viewlet for secondary navigation tabs.
+    """
+    
+    index = ViewPageTemplateFile('templates/sections.pt')
     
     def update(self):
         context = aq_inner(self.context)
