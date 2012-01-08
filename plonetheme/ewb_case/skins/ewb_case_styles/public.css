@@ -552,17 +552,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     margin: 1em 0.25em 2em 0.25em;
 }
 
-#portal-column-content,
-#portal-column-one {
-    padding-top: .6em;
-}
-
-#portal-column-one {
-    border-right: 1px solid #999;
-    padding-right: 1.25%;
-    height: 100%;
-}
-
 /* Special case of #content - TinyMCE */
 body#content {
     margin: 1em;
