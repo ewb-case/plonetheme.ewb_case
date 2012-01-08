@@ -27,7 +27,7 @@
         manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
         permission="zope2.View"
         layer=".interfaces.IThemeSpecific"
-        template="./templates/plone.logo.pt"
+        template="./templates/logo.pt"
         class="plone.app.layout.viewlets.common.LogoViewlet"
         />
     

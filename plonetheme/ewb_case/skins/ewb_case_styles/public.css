@@ -104,57 +104,45 @@ q {
 
 #portal-logo-bar {
     width: 100%;
-    display: block;
-    text-align: center;
-    position: relative;
-}
-
-#portal-logo-bar-background {
-    width: 100%;
-    height: 42px;
-    background-image: url(logo-bar-background.png);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#portal-logo {
-    display: inline-block;
-    width: 900px;
     height: 40px;
-    margin: 0;
     position: relative;
-    font-size: 1.4em;
+    background-image: url(logo-bar-background.png);
+    background-repeat:repeat-x;
     text-align: center;
-    color: black;
-    clear: both;
 }
 
-.portal-logo-text {
+#portal-logo-text,
+#portal-logo-left-text,
+#portal-logo-right-text {
     height: 100%;
+}
+#portal-logo-text {
+    display: block;
+    width: 100%;
+    position: absolute;
+}
+#portal-logo-left-text,
+#portal-logo-right-text {
+    width: 50%;
+    float: left;
     position: relative;
 }
 
-.portal-logo-text > div {
+.portalLogoText {
     position: absolute;
     bottom: 0;
     margin-bottom: 0.25em;
+    font-size: 1.4em;
+    color: black;
+}
+#portal-logo-left-text .portalLogoText {
+    right: 2.2em;
+}
+#portal-logo-right-text .portalLogoText {
+    left: 2.2em;
 }
 
-#portal-logo-left-text {
-    float: left;
-    width: 40%;
-}
 
-#portal-logo-icon {
-    width: 20%;
-    float: left;
-}
-
-#portal-logo-right-text {
-    float: left;
-    width: 40%;
-}
 
 #portal-globalnav {
     clear: both;
