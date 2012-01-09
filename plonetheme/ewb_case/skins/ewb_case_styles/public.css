@@ -378,8 +378,8 @@ input.searchField {
 
 #portal-siteactions {
     font-size: 85%;
-    padding-bottom: 2em;
     text-align: center;
+    margin-bottom: .8em;
 }
 #portal-siteactions li {
     margin-right: 0.5em;
@@ -1761,24 +1761,33 @@ dl.toc dd ol {
 
 /* @end */
 
-/* @group Footer */
 
-#portal-footer {
-    font-size: 75%;
-    background: #ddd;
-    padding: 1em;
-    margin: 1em 0;
-    line-height: 2em;
+/* @group Bottom */
+
+#portal-bottom {
+    background: #f4f4f4;
+    padding-top: 0.3em;
+    border-top: 1px solid #999;
 }
 
+/* @end */
+
+
+/* @group Footer */
+
+#portal-footer,
 #portal-colophon {
     font-size: 70%;
     text-align: center;
+    margin-bottom: .6em;
+}
+
+#portal-colophon {
     margin-bottom: 1em;
 }
 
 #portal-colophon li {
-    padding:0 0.75em;
+    padding: 0 0.75em;
 }
 
 #portal-colophon a {

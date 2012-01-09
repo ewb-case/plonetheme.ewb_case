@@ -13,4 +13,12 @@
         <viewlet name="plone.logo" />
         <viewlet name="plonetheme.ewb_case.header_tabs" />
     </order>
+    
+  <!-- plone.portalfooter -->
+    <order manager="plone.portalfooter" skinname="EWB Case Theme" based-on="Plone Default">
+        <viewlet name="plone.site_actions" />
+        <viewlet name="plone.footer" />
+        <viewlet name="plone.colophon" />
+    </order>
+ 
 </object>
