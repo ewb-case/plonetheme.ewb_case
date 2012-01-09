@@ -68,5 +68,16 @@
         class=".controlpanel.EwbCaseThemeSettingsControlPanel"
         permission="cmf.ManagePortal"
         />
+        
+  <!-- Footer -->
+    <browser:viewlet    
+        name="plone.footer"
+        for="*"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        permission="zope2.View"
+        layer=".interfaces.IThemeSpecific"
+        template="./templates/footer.pt"
+        class="plone.app.layout.viewlets.common.FooterViewlet"
+        />
 
 </configure>
