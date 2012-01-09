@@ -385,7 +385,7 @@ input.searchField {
     margin-right: 0.5em;
 }
 #portal-siteactions li a:hover {
-    color: #75ad0a
+    color: #007F30
 }
 
 /* @end */
@@ -440,7 +440,7 @@ div.portletAssignments {
     line-height: 2em;
 }
 
-div.portletAssignments div.portletHeader,
+.portletHeader,
 div.portletAssignments div.portletHeader a {
     color: white;
 }
@@ -467,6 +467,15 @@ dl.portlet dd.portletFooter,
 dl.portletError dd {
     padding: 1em;
 }
+
+.portlet {
+    border: 1px solid #999;
+}
+
+.portlet > .portletHeader {
+    margin: -1px -1px 0 -1px;
+}
+
 
 
 
@@ -591,7 +600,7 @@ dl.portlet a:visited {
 }
 #content a:hover,
 dl.portlet a:hover {
-    color: #75ad0a !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
+    color: #007F30 !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
 #content a:target {
     background-color: #ffb;
@@ -956,8 +965,8 @@ dl.error dd {
     border: 0.3em solid #ddd;
 }
 #edit-bar {
-    background-color: #75ad0a;
-    border: 0.25em solid #75ad0a;
+    background-color: #007F30;
+    border: 0.25em solid #007F30;
     font-size: 80%;
     min-height: 2em;
     margin-bottom: 1em;
@@ -965,7 +974,7 @@ dl.error dd {
 }
 #content-views {
     float: left;
-    background-color: #75ad0a;
+    background-color: #007F30;
 }
 #content-views a {
     color: White;
@@ -1079,12 +1088,12 @@ dl.error dd {
 
 #contentActionMenus dl.actionMenu a,
 #contentActionMenus dl.actionMenu.activated dd {
-    background-color: #75ad0a;
+    background-color: #007F30;
     color: White;
     z-index: 5;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-    border-bottom: 0.5em solid #75ad0a;
+    border-bottom: 0.5em solid #007F30;
         right: -3px;
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
@@ -1107,7 +1116,7 @@ dl.error dd {
 
 #contentActionMenus {
     float: right;
-    background: #75ad0a;
+    background: #007F30;
     margin: 0;
     position: relative;
     top: -0.23em;
@@ -1863,9 +1872,9 @@ dl.toc dd ol {
 
 .hiddenStructure {
     display: block;
-    background: transparent;
+    background: transparent !important;
     background-image: none; /* safari bug */
-    border: none;
+    border: none !important;
     height: 0.1em;
     overflow: hidden;
     padding: 0;
@@ -1972,7 +1981,7 @@ div.overlay label {
     margin-bottom: 0.25em;
 }
 div.overlay a:hover {
-    color: #75ad0a;
+    color: #007F30;
 }
 div.overlay a.selected {
     color: #000000;
