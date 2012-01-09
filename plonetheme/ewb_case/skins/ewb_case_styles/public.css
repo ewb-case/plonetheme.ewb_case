@@ -93,13 +93,44 @@ q {
 
 /* @end */
 
+
+/* @group Portal Top Bar */
+
+#portal-top-bar {
+    margin-bottom: .6em;
+    z-index: 1;
+}
+
+#portal-top-bar > .cell > div {
+    padding: 0.20em 0;
+    background #f4f4f4;
+    border-bottom: 1px solid #999;
+}
+
+
+/* @end */
+
+
+#portal-personaltools-wrapper {
+    float: right;
+}
+
+#portal-personaltools {
+    font-size: 80%;
+}
+#portal-personaltools #anon-personalbar a {
+    float: left;
+    margin-right: 0.5em;
+}
+
+
+
 /* @group Navigation/search */
 
 #portal-header {
     position: relative;
     z-index: 2;
-    border-bottom: 0;
-    border-top: 0;
+    margin-top: .4em;
 }
 
 #portal-logo-bar {
@@ -148,7 +179,6 @@ q {
     clear: both;
     font-size: .8em;
     border-bottom: 1px solid #999;
-    margin-bottom: 1em;
     text-align: center;
 }
 
@@ -185,6 +215,7 @@ q {
     float: left;
     margin: 0;
     padding: 0;
+    border-top: 1px solid #999;
     border-left: 1px solid #999;
 }
 
@@ -223,34 +254,6 @@ q {
 }
 
 
-
-#portal-personaltools-wrapper {
-    width: 100%;
-    position: absolute;
-    top: 0;
-}
-
-#portal-personaltools {
-    float: right;
-    background: #e3e3e3;
-    position: relative;
-    z-index: 3; /* personaltools should be above #portal-header (with z-index: 2) */
-    top: 0;
-    right: 0;
-    padding: 0.25em 0.5em;
-    font-size: 80%;
-    border-bottom-right-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
-    -webkit-border-bottom-right-radius: 0.5em;
-    -webkit-border-bottom-left-radius: 0.5em;
-    -moz-border-radius-bottomleft: 0.5em;
-    -moz-border-radius-bottomright: 0.5em;
-}
-#portal-personaltools #anon-personalbar a {
-    float: left;
-    margin-right: 0.5em;
-}
-
 #portal-languageselector {
     float: right;
     background: #e3e3e3;
@@ -270,10 +273,8 @@ q {
 }
 
 #portal-searchbox {
-    float: right;
+    float: left;
     text-align: left;
-    clear: right;
-    margin: 1.2em 0;
     font-size: 80%;
 }
 

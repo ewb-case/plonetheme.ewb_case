@@ -66,6 +66,18 @@
             <div tal:replace="structure provider:plone.portaltop" />
 </div>
         </div>
+        
+                <div id="portal-top-bar"
+            class="row"
+            i18n:domain="plone"
+            tal:condition="not:ajax_load">
+<div class="cell width-full position-0"> <!-- TODO: Temporary, this one should be in the template that is inserted -->
+            <div class="clearfix">
+                <div tal:replace="structure provider:plonetheme.ewb_case.portal_top_bar" />
+            </div>
+</div>
+        </div>
+        
     <div id="portal-columns" class="row">
 
         <div id="portal-column-content" class="cell" tal:attributes="class python:sunburst_view.getColumnsClass(view)">
