@@ -404,6 +404,9 @@ input.searchField {
     display: block;
     float: left;
 }
+#portal-breadcrumbs > li:first-child {
+    padding-right:.3em;
+}
 #portal-breadcrumbs > li:last-child {
     font-style: italic;
 }
@@ -415,12 +418,12 @@ input.searchField {
 
 #portal-breadcrumbs > li:after {
     content: ">";
-       color: #3A3A3A;
-
 }
-
 #portal-breadcrumbs > li:last-child:after {
     content: "";
+}
+#portal-breadcrumbs > li:first-child:after {
+    content: ":";
 }
 
 /* @end */

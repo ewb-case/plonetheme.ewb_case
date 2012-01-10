@@ -1,12 +1,10 @@
 <tal:sections
   tal:define="portal_tabs view/portal_tabs"
   tal:condition="portal_tabs"
-  i18n:domain="plone"
-  metal:define-macro="sections">
+  i18n:domain="plone">
 
     <ul class="portalTabs clearfix"
       tal:define="selected_tab python:view.selected_portal_tab">
-        <span metal:define-slot="sections_label"></span>
         <tal:tabs tal:repeat="tab portal_tabs">
             <li tal:define="tid tab/id"
               tal:attributes="id string:portaltab-${tid};
