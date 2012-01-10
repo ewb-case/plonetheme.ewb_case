@@ -97,14 +97,8 @@ q {
 /* @group Portal Top Bar */
 
 #portal-top-bar {
-    margin-bottom: .6em;
-    z-index: 1;
-}
-
-#portal-top-bar > .cell > div {
-    padding: 0.20em 0;
-    background #f4f4f4;
-    border-bottom: 1px solid #999;
+    position: absolute;
+    z-index: 3;
 }
 
 
@@ -113,6 +107,14 @@ q {
 
 #portal-personaltools-wrapper {
     float: right;
+    padding: 0.15em 0.25em;
+    background: #ddd;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    -webkit-border-bottom-right-radius: 0.5em;
+    -webkit-border-bottom-left-radius: 0.5em;
+    -moz-border-radius-bottomleft: 0.5em;
+    -moz-border-radius-bottomright: 0.5em;
 }
 
 #portal-personaltools {
@@ -182,18 +184,12 @@ q {
     text-align: center;
 }
 
-#left-portal-tabs,
-#right-portal-tabs {
-    width: 50%;
+#portal-globalnav > * {
     float: left;
 }
 
-#right-portal-tabs  {
-    text-align: right;
-}
-
 #left-portal-tabs {
-    text-align: left;
+    padding-right: 2em;
 }
 
 #left-portal-tabs .portalTabs {
@@ -223,20 +219,29 @@ q {
     border-right: 1px solid #999;
 }
 
+.portalTabs li.tabsLabel {
+    border: 0;
+    padding-right: .25em;
+}
+
 .portalTabs .selected {
     border-bottom: 1px solid white;
     margin-bottom: -1px;
     font-style: italic;
 }
 
-.portalTabs li a {
+.portalTabs li a,
+.portalTabs .tabsLabel {
     display: inline-block;
-    padding: 0.3em 1em 0.3em 1em;
+    padding: 0.3em 1em;
+    white-space: normal;
+    color: #3a3a3a;
+}
+
+.portalTabs li a {
     background: #f4f4f4;
     min-width: 5em;
-    white-space: normal;
     text-align: center;
-    color: #3a3a3a;
 }
 .portalTabs li a:hover {
     background: white;
@@ -276,6 +281,7 @@ q {
     float: left;
     text-align: left;
     font-size: 80%;
+    padding: .25em .15em;
 }
 
 #portal-searchbox form {
@@ -357,16 +363,64 @@ input.searchField {
 /* @end */
 
 
+/* @group Portal subbar */
+
+#portal-sub-bar {
+    border-bottom: 1px solid #999;
+    margin-bottom: 1em;
+}
+
+#left-sub-bar,
+#right-sub-bar {
+    width: 50%;
+    float: left;
+}
+
+#right-sub-bar > * {
+    float: right;
+}
+
+
+/* @end */
+
+
 /* @group Path indicator (breadcrumbs) */
 
 #portal-breadcrumbs {
     font-size: 80%;
-    margin-bottom: 1em;
     margin-left: 0.25em;
 }
+
+#portal-breadcrumbs,
 #portal-breadcrumbs a {
-    border-bottom: none;
+   color: #3A3A3A;
+}
+
+#portal-breadcrumbs a:hover {
+    color: #205C90;
+}
+
+#portal-breadcrumbs > li {
+    display: block;
+    float: left;
+}
+#portal-breadcrumbs > li:last-child {
+    font-style: italic;
+}
+
+#portal-breadcrumbs > li > * {
     display: inline-block;
+    padding: .15em 0 .15em .3em;
+}
+
+#portal-breadcrumbs > li:after {
+    content: ">";
+       color: #3A3A3A;
+
+}
+
+#portal-breadcrumbs > li:last-child:after {
+    content: "";
 }
 
 /* @end */

@@ -6,6 +6,8 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from plone.app.layout.viewlets.common import GlobalSectionsViewlet
 
+from plonetheme.ewb_case.util import getSecondaryNavLabel
+
 
 class PrimarySectionsViewlet(GlobalSectionsViewlet):
     """Viewlet for the primary navigation tabs.
@@ -18,7 +20,7 @@ class SecondarySectionsViewlet(GlobalSectionsViewlet):
     """Viewlet for secondary navigation tabs.
     """
     
-    index = ViewPageTemplateFile('templates/sections.pt')
+    index = ViewPageTemplateFile('templates/labeled_sections.pt')
     
     def update(self):
         context = aq_inner(self.context)
@@ -28,4 +30,7 @@ class SecondarySectionsViewlet(GlobalSectionsViewlet):
     
         self.selected_tabs = self.selectedTabs(portal_tabs=self.portal_tabs)
         self.selected_portal_tab = self.selected_tabs['portal']
+        self.sections_label = getSecondaryNavLabel(context)
+        
+
 

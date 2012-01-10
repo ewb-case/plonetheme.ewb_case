@@ -18,3 +18,11 @@ class IThemeView(Interface):
 
 class IPortalTopBar(IViewletManager):
     pass
+
+
+class ILeftSubBar(IViewletManager):
+    pass
+
+
+class IRightSubBar(IViewletManager):
+    pass

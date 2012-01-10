@@ -14,4 +14,8 @@ def getDropDownMenuSettings(context):
 
 def getNavigationRootPath(context):
     return getDropDownMenuSettings(context).second_nav_source
+
+
+def getSecondaryNavLabel(context):
+    return getDropDownMenuSettings(context).second_nav_label
     

@@ -29,14 +29,6 @@
         class="plone.app.viewletmanager.manager.OrderedViewletManager"
         provides=".interfaces.IPortalTopBar"
         />
-        
-    <browser:viewlet
-        name="plone.searchbox"
-        manager=".interfaces.IPortalTopBar"
-        class="plone.app.layout.viewlets.common.SearchBoxViewlet"
-        permission="zope2.View"
-        template="./templates/searchbox.pt"
-        />
    
    <browser:viewlet
         name="plone.personal_bar"
@@ -86,8 +78,56 @@
       class=".navigation.SecondaryNavigationTabs"
       permission="zope.Public"
       />
+      
+      
+  <!-- plonetheme.ewb_case.subbar --> 
+  
+    <browser:viewlet    
+        name="plonetheme.ewb_case.subbar"
+        for="*"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        permission="zope2.View"
+        layer=".interfaces.IThemeSpecific"
+        template="./templates/subbar.pt"
+        />
+        
+    <browser:viewletManager
+        name="plonetheme.ewb_case.left_subbar"
+        for="*"
+        permission="zope2.View"
+        layer=".interfaces.IThemeSpecific"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        provides=".interfaces.ILeftSubBar"
+        />
+
+    <browser:viewlet
+        name="plone.path_bar"
+        manager=".interfaces.ILeftSubBar"
+        class="plone.app.layout.viewlets.common.PathBarViewlet"
+        permission="zope2.View"
+        template="./templates/path_bar.pt"
+        />
+        
+   <browser:viewletManager
+        name="plonetheme.ewb_case.right_subbar"
+        for="*"
+        permission="zope2.View"
+        layer=".interfaces.IThemeSpecific"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        provides=".interfaces.IRightSubBar"
+        />
+        
+    <browser:viewlet
+        name="plone.searchbox"
+        manager=".interfaces.IRightSubBar"
+        class="plone.app.layout.viewlets.common.SearchBoxViewlet"
+        permission="zope2.View"
+        template="./templates/searchbox.pt"
+        />
+
         
   <!-- Control Panel -->
+  
     <browser:page
         name="ewb_case_theme-settings"
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"

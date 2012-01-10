@@ -4,7 +4,7 @@
     <div id="left-portal-tabs">
         <tal:block tal:replace="structure provider:plonetheme.ewb_case.left_portal_tabs" />
     </div>
-    
+
     <div id="right-portal-tabs">
         <tal:block tal:replace="structure provider:plonetheme.ewb_case.right_portal_tabs" />
     </div>

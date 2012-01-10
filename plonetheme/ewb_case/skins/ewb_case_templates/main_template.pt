@@ -57,17 +57,7 @@
                     dir python:isRTL and 'rtl' or 'ltr'">
 
 <div id="visual-portal-wrapper">
-
-        <div id="portal-top"
-            class="row"
-            i18n:domain="plone"
-            tal:condition="not:ajax_load">
-<div class="cell width-full position-0"> <!-- TODO: Temporary, this one should be in the template that is inserted -->
-            <div tal:replace="structure provider:plone.portaltop" />
-</div>
-        </div>
-        
-                <div id="portal-top-bar"
+        <div id="portal-top-bar"
             class="row"
             i18n:domain="plone"
             tal:condition="not:ajax_load">
@@ -77,6 +67,16 @@
             </div>
 </div>
         </div>
+        
+        <div id="portal-top"
+            class="row"
+            i18n:domain="plone"
+            tal:condition="not:ajax_load">
+<div class="cell width-full position-0"> <!-- TODO: Temporary, this one should be in the template that is inserted -->
+            <div tal:replace="structure provider:plone.portaltop" />
+</div>
+        </div>
+        
         
     <div id="portal-columns" class="row">
 

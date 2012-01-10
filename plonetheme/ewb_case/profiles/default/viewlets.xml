@@ -2,27 +2,53 @@
 <object>
     
   <!-- plonetheme.ewb_case.portal_top_bar -->
-    <order manager="plone.portalheader" skinname="EWB Case Theme" based-on="Plone Default">
-        <viewlet name="plone.searchbox" />
+    <order manager="plonetheme.ewb_case.portal_top_bar"
+      skinname="EWB Case Theme" based-on="Plone Default">
         <viewlet name="plone.personal_bar" />
         <viewlet name="plone.app.i18n.locales.languageselector" />
     </order>
     
   <!-- plone.portalheader -->
-    <hidden manager="plone.portalheader" skinname="EWB Case Theme" based-on="Plone Default">
+    <hidden manager="plone.portalheader" skinname="EWB Case Theme"
+      based-on="Plone Default">
         <viewlet name="plone.searchbox" />
         <viewlet name="plone.global_sections" />
         <viewlet name="plone.personal_bar" />
     </hidden>
     
-    <order manager="plone.portalheader" skinname="EWB Case Theme" based-on="Plone Default">
+    <order manager="plone.portalheader" skinname="EWB Case Theme"
+      based-on="Plone Default">
         <viewlet name="plone.skip_links" />
         <viewlet name="plonetheme.ewb_case.header_tabs" />
         <viewlet name="plone.logo" />
+        <viewlet name="plonetheme.ewb_case.subbar" />
     </order>
     
+    
+  <!-- plonetheme.ewb_case.left_subbar -->
+    <order manager="plonetheme.ewb_case.left_subbar" skinname="EWB Case Theme"
+      based-on="Plone Default">
+        <viewlet name="plone.path_bar" />
+    </order>
+    
+    
+  <!-- plonetheme.ewb_case.right_subbar -->
+    <order manager="plonetheme.ewb_case.right_subbar" skinname="EWB Case Theme"
+      based-on="Plone Default">
+        <viewlet name="plone.searchbox" />
+    </order>
+    
+    
+  <!-- plone.abovecontent -->
+    <hidden manager="plone.abovecontent" skinname="EWB Case Theme"
+      based-on="Plone Default">
+        <viewlet name="plone.path_bar" />
+    </hidden>
+        
+        
   <!-- plone.portalfooter -->
-    <order manager="plone.portalfooter" skinname="EWB Case Theme" based-on="Plone Default">
+    <order manager="plone.portalfooter" skinname="EWB Case Theme"
+      based-on="Plone Default">
         <viewlet name="plone.site_actions" />
         <viewlet name="plone.footer" />
         <viewlet name="plone.colophon" />

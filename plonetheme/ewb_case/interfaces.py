@@ -16,3 +16,8 @@ class IEwbCaseThemeSettings(Interface):
             title=_(u"Second Nav Source"),
             required=False
     )
+    
+    second_nav_label = field.TextLine(
+            title=_(u"Second Nav Label"),
+            required=False
+    )

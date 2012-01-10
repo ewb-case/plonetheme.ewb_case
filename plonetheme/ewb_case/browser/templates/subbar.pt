@@ -1,0 +1,8 @@
+<div id="portal-sub-bar" class="clearfix">    
+    <div id="left-sub-bar">
+        <tal:block tal:replace="structure provider:plonetheme.ewb_case.left_subbar" />
+    </div>
+    <div id="right-sub-bar">
+        <tal:block tal:replace="structure provider:plonetheme.ewb_case.right_subbar" />
+    </div>
+</div>
