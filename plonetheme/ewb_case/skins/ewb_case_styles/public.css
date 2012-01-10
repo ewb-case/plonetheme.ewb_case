@@ -528,13 +528,17 @@ dl.portletError dd {
 
 .portlet {
     border: 1px solid #999;
+    border-radius: .25em;
+    -moz-border-radius: .25em;
+    -webkit-border-radius: .25em;
 }
 
 .portlet > .portletHeader {
     margin: -1px -1px 0 -1px;
+    border-radius: .25em .25em 0 0;
+    -moz-border-radius: .25em .25em 0 0;
+    -webkit-border-radius: .25em .25em 0 0;
 }
-
-
 
 
 div.managePortletsLink,
