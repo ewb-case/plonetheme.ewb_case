@@ -580,6 +580,10 @@ a.managePortletsFallback {
 
 /* @group Navigation portlet */
 
+dl.portlet ul.navTree {
+    overflow: hidden;
+}
+
 dl.portlet ul.navTree li a {
     border: none;
     display: block;
@@ -595,9 +599,13 @@ dl.portletNavigationTree dd.portletItem {
 }
 
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
-    padding: 0.25em 1em;
+    width: 100%;
+    padding: 0.15em .5em;
     border-bottom: 0.1em dotted #ddd;
     line-height: 2em;
+}
+dl.portlet ul.navTreeLevel0 > .navTreeItem:last-child {
+    border-bottom: 0;
 }
 
 dl.portlet ul.navTreeLevel1 .navTreeItem {
@@ -607,9 +615,9 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
 
 dl.portlet ul.navTree .navTreeCurrentItem {
     background-color: #ddd;
-    border-left: 1em solid #ddd;
-    margin-left: -1em;
-    margin-right: -1em;
+    margin-left: -.5em;
+    margin-right: -.5em;
+    padding-left: 100%;
 }
 
 /* @end */
