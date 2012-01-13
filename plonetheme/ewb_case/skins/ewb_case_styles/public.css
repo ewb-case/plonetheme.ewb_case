@@ -101,6 +101,10 @@ q {
     z-index: 3;
 }
 
+#portal-top-bar .cell {
+    height: 0;
+}
+
 
 /* @end */
 
@@ -413,7 +417,7 @@ input.searchField {
 
 #portal-breadcrumbs > li > * {
     display: inline-block;
-    padding: .15em 0 .15em .3em;
+    padding: .25em 0 .15em .3em;
 }
 
 #portal-breadcrumbs > li:after {

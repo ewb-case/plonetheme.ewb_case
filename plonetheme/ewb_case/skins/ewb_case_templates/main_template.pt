@@ -62,7 +62,7 @@
             i18n:domain="plone"
             tal:condition="not:ajax_load">
 <div class="cell width-full position-0"> <!-- TODO: Temporary, this one should be in the template that is inserted -->
-            <div class="clearfix">
+            <div>
                 <div tal:replace="structure provider:plonetheme.ewb_case.portal_top_bar" />
             </div>
 </div>

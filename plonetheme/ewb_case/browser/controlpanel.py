@@ -7,7 +7,7 @@ class EwbCaseThemeSettingsEditForm(controlpanel.RegistryEditForm):
     schema = IEwbCaseThemeSettings
     
     label = _(u"Ewb Case Theme settings")
-    description = _(u"""""")
+    description = _(u""" """)
 
 
 class EwbCaseThemeSettingsControlPanel(controlpanel.ControlPanelFormWrapper):
