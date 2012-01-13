@@ -333,13 +333,16 @@ input.searchField {
 #LSResult {
     position: absolute;
     right: 0;
-    background: White;
-    margin: -1.5em 0 0 -7em;
+    margin-top: -1.5em;
 }
 
 #LSResult fieldset {
     padding: 1em 0 0;
     border: 0.1em solid #ccc;
+}
+
+.livesearchContainer {
+    background: white;
 }
 
 #livesearchLegend {

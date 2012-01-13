@@ -10,7 +10,8 @@
         name="EWB Case Theme"
         />
 
-    <!-- ewb_case  special view -->
+  <!-- ewb_case  special view -->
+  
     <browser:page
         for="*"
         name="ewb_caseview"
@@ -18,6 +19,7 @@
         permission="zope.Public"
         allowed_interface=".interfaces.IThemeView"
         />  
+  
   
   <!-- Portal Top Bar -->
   
@@ -124,7 +126,7 @@
         permission="zope2.View"
         template="./templates/searchbox.pt"
         />
-
+        
         
   <!-- Control Panel -->
   

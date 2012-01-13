@@ -8,27 +8,30 @@
           id string:${search_input_id}_form">
 
         <div class="LSBox">
-        <label class="hiddenStructure"
-               tal:attributes="for search_input_id"
-               i18n:translate="text_search">Search Site</label>
+            <label class="hiddenStructure"
+                   tal:attributes="for search_input_id"
+                   i18n:translate="text_search">Search Site</label>
+    
+            <input name="SearchableText"
+                   type="text"
+                   size="18"
+                   value=""
+                   title="Search Site"
+                   accesskey="4"
+                   i18n:attributes="title title_search_site;"
+                   tal:attributes="value request/form/SearchableText|nothing;
+                                   id search_input_id"
+                   class="searchField inputLabel" />
+    
+            <input class="searchButton"
+                   type="submit"
+                   value="Search"
+                   i18n:attributes="value label_search;" />
+                   
+            <div class="LSResult" id="LSResult" style="">
+                <div class="LSShadow" id="LSShadow"></div>
+            </div>
 
-        <input name="SearchableText"
-               type="text"
-               size="18"
-               value=""
-               title="Search Site"
-               accesskey="4"
-               i18n:attributes="title title_search_site;"
-               tal:attributes="value request/form/SearchableText|nothing;
-                               id search_input_id"
-               class="searchField inputLabel" />
-
-        <input class="searchButton"
-               type="submit"
-               value="Search"
-               i18n:attributes="value label_search;" />
-
-        <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
         </div>
     </form>
 
