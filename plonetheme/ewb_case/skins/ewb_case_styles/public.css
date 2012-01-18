@@ -1043,7 +1043,8 @@ dl.error dd {
 }
 #edit-bar {
     background-color: #007F30;
-    border: 0.25em solid #007F30;
+    border-color: #007F30;
+    border-top: 0.25em solid #007F30;
     font-size: 80%;
     min-height: 2em;
     margin-bottom: 1em;

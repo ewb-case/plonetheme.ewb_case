@@ -3,6 +3,8 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="plonetheme.ewb_case">
 
+  <include package="plone.app.registry" />
+
   <genericsetup:registerProfile
       name="default"
       title="EWB Case Theme"

@@ -1,3 +1,5 @@
+from zope.component import getUtility
+
 from Testing.ZopeTestCase import Sandboxed
 
 from Products.Five import zcml
@@ -7,6 +9,11 @@ from Products.Five.testbrowser import Browser
 from Products.PloneTestCase import PloneTestCase as ptc
 
 from collective.testcaselayer.ptc import BasePTCLayer, ptc_layer
+
+from plone.registry.interfaces import IRegistry
+
+from plonetheme.ewb_case.interfaces import IEwbCaseThemeSettings
+
 
 class Layer(BasePTCLayer):
     """ set up basic testing layer """
@@ -21,6 +28,8 @@ class Layer(BasePTCLayer):
         installPackage('plonetheme.ewb_case', quiet=True)
         # finally load the testing profile
         self.addProfile('plonetheme.ewb_case:default')
+        
+        
 
 layer = Layer(bases=[ptc_layer])
 
@@ -50,6 +59,10 @@ class Themeewb_caseTestCase(Sandboxed, ptc.PloneTestCase):
     """ Base class used for test cases """
 
     layer = layer
+    
+    def aftterSetUp(self):
+        self.registry = Registry()
+
     
 class FunctionalTestCase(ptc.FunctionalTestCase):
 
