@@ -1,7 +1,6 @@
 from zope.component import getUtility
 
 from plone.registry.interfaces import IRegistry
-from plone.registry.recordsproxy import RecordsProxy
 
 from plonetheme.ewb_case.interfaces import IEwbCaseThemeSettings
 

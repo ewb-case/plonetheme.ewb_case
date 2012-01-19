@@ -23,7 +23,7 @@
       title view/navigation_root_title"
       i18n:domain="plone"
       i18n:attributes="title">
-        <object data="logo.svg" type="image/svg+xml">
+        <object data="logo.svg" type="image/svg+xml" width="74" height="68">
             <img src="logo.png" alt=""
               tal:replace="structure view/logo_tag" />
         </object> 

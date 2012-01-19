@@ -59,9 +59,8 @@ class Themeewb_caseTestCase(Sandboxed, ptc.PloneTestCase):
     """ Base class used for test cases """
 
     layer = layer
-    
-    def aftterSetUp(self):
-        self.registry = Registry()
+
+
 
     
 class FunctionalTestCase(ptc.FunctionalTestCase):
