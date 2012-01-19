@@ -11,5 +11,13 @@
       description="Plone theme for Cirb"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+      
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="EWB Case Theme"
+      directory="profiles/default"
+      description="Plone theme for Cirb"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
 
 </configure>
