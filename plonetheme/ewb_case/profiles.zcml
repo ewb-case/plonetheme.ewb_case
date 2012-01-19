@@ -12,12 +12,4 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-  <genericsetup:importStep
-      name="plonetheme.ewb_case.various"
-      title="EWB Case Theme"
-      description="Various import steps that are not handled by GS import/export handlers."
-      handler="plonetheme.ewb_case.setuphandlers.setupVarious">
-    <depends name="skins"/>
-  </genericsetup:importStep>
-
 </configure>
