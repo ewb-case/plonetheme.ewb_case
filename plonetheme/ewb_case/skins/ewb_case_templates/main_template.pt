@@ -56,7 +56,7 @@
     tal:attributes="class body_class;
                     dir python:isRTL and 'rtl' or 'ltr'">
 
-<div id="visual-portal-wrapper">
+<div id="visual-portal-wrapper" class="clearfix">
         <div id="portal-top-bar"
             class="row"
             i18n:domain="plone"

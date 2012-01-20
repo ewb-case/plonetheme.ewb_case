@@ -32,7 +32,7 @@ iframe { border-width: 0; border-style:none; }
 body {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 12pt;
-    background: White;
+    background: #F4F4F4;
     color: Black;
     min-width: 960px;
 }
@@ -93,6 +93,14 @@ q {
 
 /* @end */
 
+
+/* @group Portal Wrapper */
+
+#visual-portal-wrapper {
+    background: white;
+}
+
+/* @end */
 
 /* @group Portal Top Bar */
 
