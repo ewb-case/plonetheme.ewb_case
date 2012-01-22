@@ -1,16 +1,15 @@
-Introduction
-============
+===================
+plonetheme.ewb_case
+===================
+
 :Author: Matt Bierner 
-:Sponsor: CIRB
 :Copyright: Creative Commons Attribution 3.0 Unported
 
 
-This is a sample Plone4 theme for CIRB
+About
+=====
 
-The purpose of this buildout is to show how to do a Plone4 skin from the ground
-up.
-
-
-
+A Plone 4 theme for the Case Western Reserve University Engineers Without Borders
+website.
 
 

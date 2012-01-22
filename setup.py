@@ -5,14 +5,13 @@ version = '0.1'
 
 setup(name='plonetheme.ewb_case',
       version=version,
-      description="An Installable theme for Plone 4",
+      description="A Plone 4 for EWB Case",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from
-      # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
+        "Development Status :: 4 - Beta",
         ],
       keywords='',
       author='Matt Bierner',

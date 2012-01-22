@@ -1,7 +1,7 @@
 plonetheme.ewb_case Installation
 -------------------------------
 
-To install plonetheme.cpasixelles into the global Python environment (or a workingenv),
+To install plonetheme.ewb_case into the global Python environment (or a workingenv),
 using a traditional Zope 2 instance, you can do this:
 
 * When you're reading this you have probably already run 
