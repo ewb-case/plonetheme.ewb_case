@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<registry>
+    <records interface="plonetheme.ewb_case.interfaces.IEwbCaseThemeSettings" delete="True"/>
+</registry>
