@@ -18,6 +18,7 @@
         class=".ewb_caseview.ThemeView"
         permission="zope.Public"
         allowed_interface=".interfaces.IThemeView"
+        layer=".interfaces.IThemeSpecific"
         />  
   
   
