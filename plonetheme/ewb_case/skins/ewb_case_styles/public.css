@@ -1636,6 +1636,10 @@ dd.image-caption {
 
 /* @group Forms */
 
+body form {
+height: auto; /* Overrides weird bug in rpx.authenticaion */
+}
+
 fieldset,
 .editionComment {
     line-height:1.5em;
