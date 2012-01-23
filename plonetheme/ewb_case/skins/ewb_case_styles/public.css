@@ -556,6 +556,28 @@ dl.portletError dd {
 }
 
 
+/* Left portlet header stuff */
+
+.portlet > .portletHeader.portletLeftHeader {
+    border-radius: .25em 0 0 .25em;
+    -moz-border-radius: .25em 0 0 .25em;
+    -webkit-border-radius: .25em 0 0 .25em;
+}
+
+.portlet.leftHeaderPortlet {
+    display: table;
+}
+
+.portlet > .portletHeader.portletLeftHeader,
+.portlet > .portletHeader.portletLeftHeader ~ * {
+    display: table-cell;
+}
+
+.portlet > .portletHeader.portletLeftHeader {
+    margin: -1px 0 -1px -1px !important;
+}
+
+
 div.managePortletsLink,
 a.managePortletsFallback {
     text-align: center;
@@ -647,6 +669,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 /* Special case of #content - TinyMCE */
+#content #portletPageColumns {
+    font-size: 100%;
+}
+
 body#content {
     margin: 1em;
 }
@@ -670,12 +696,6 @@ dl.portlet {
 #content ul,
 #content ol {
 
-}
-
-#content a:link,
-dl.portlet a:link {
-    color: #205c90;
-    border-bottom: 0.1em solid #ccc;
 }
 
 #content a:visited,
