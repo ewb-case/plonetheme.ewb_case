@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+
+    <layer name="plonetheme.ewb_case"
+        interface="plonetheme.ewb_case.browser.interfaces.IThemeSpecific" />
+    
+</layers>
