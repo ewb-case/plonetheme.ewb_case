@@ -1,3 +1,2 @@
 recursive-include docs *
-recursive-include plonetheme
-global-exclude *py[co]
+recursive-include plonetheme *
