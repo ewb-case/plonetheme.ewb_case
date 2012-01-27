@@ -97,4 +97,33 @@
     line-height: 1.5em;
     margin-left: 1em;
     display: block;
-} 
+}
+
+
+
+
+/* @group ewb_case.portlet.get_involved Get Involved */
+
+.portletGetInvolved .portletHeader {
+    vertical-align: middle;
+}
+
+#content .portletGetInvolved ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.portletGetInvolved ul > li {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: .2em 1.2em 0 1.2em;
+}
+
+dl.portletGetInvolved dd.portletItem {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* @end */
