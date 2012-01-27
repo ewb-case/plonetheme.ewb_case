@@ -1,2 +1,3 @@
+global-include .py .pt .js .zcml .png .css .txt .GPL .xml
 recursive-include docs *
 recursive-include plonetheme *
