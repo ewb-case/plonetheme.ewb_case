@@ -1,6 +1,13 @@
 Changelog
 =========
 
+0.1.2 (beta)
+-------------------
+
+- Max page width
+- Portlet headers always white.
+
+
 0.1.1 (beta)
 -------------------
 
