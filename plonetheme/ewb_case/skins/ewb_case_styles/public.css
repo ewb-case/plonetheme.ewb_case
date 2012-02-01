@@ -520,7 +520,8 @@ div.portletAssignments {
     line-height: 2em;
 }
 
-#content .portletHeader,
+.portletHeader,
+.portletHeader a,
 #content .portletHeader a {
     color: white;
 }
