@@ -98,7 +98,14 @@ q {
 
 #visual-portal-wrapper {
     background: white;
+    text-align
 }
+
+#width-portal-wrapper {
+    margin: 0 auto;
+    max-width: 60em;
+}
+
 
 /* @end */
 
@@ -513,8 +520,8 @@ div.portletAssignments {
     line-height: 2em;
 }
 
-.portletHeader,
-div.portletAssignments div.portletHeader a {
+#content .portletHeader,
+#content .portletHeader a {
     color: white;
 }
 
@@ -700,7 +707,7 @@ dl.portlet {
 
 #content a:visited,
 dl.portlet a:visited {
-    color: #427597;
+    color: #red;
     border-bottom: 0.1em solid #ccc;
 }
 #content a:hover,
@@ -2333,3 +2340,6 @@ div.overlay .formControls a {
     display: none;
 }
 /* @end */
+
+
+

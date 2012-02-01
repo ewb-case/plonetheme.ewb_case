@@ -67,7 +67,9 @@
             </div>
 </div>
         </div>
-        
+ 
+     <div id="width-portal-wrapper">
+
         <div id="portal-top"
             class="row"
             i18n:domain="plone"
@@ -171,6 +173,7 @@
             </metal:portlets>
         </div>
         </tal:notajax>
+    </div>
     </div>
 
     <div id="portal-bottom" class="row">
