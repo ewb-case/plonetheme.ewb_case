@@ -34,7 +34,10 @@ body {
     font-size: 12pt;
     background: #F4F4F4;
     color: Black;
-    min-width: 960px;
+}
+
+body#main-body {
+    min-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -398,6 +401,10 @@ input.searchField {
     float: left;
 }
 
+#left-sub-bar > * {
+    padding-right: 40px;
+}
+
 #right-sub-bar > * {
     float: right;
 }
@@ -524,6 +531,11 @@ div.portletAssignments {
 .portletHeader a,
 #content .portletHeader a {
     color: white;
+}
+
+.portletHeader a:hover,
+#content .portletHeader a:hover {
+    color: red;
 }
 
 
