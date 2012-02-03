@@ -48,7 +48,7 @@
     </tal:notajax>
 </head>
 
-<body tal:define="isRTL portal_state/is_rtl;
+<body id="main-body" tal:define="isRTL portal_state/is_rtl;
                   sl python:plone_view.have_portlets('plone.leftcolumn', view);
                   sr python:plone_view.have_portlets('plone.rightcolumn', view);
                   body_class python:plone_view.bodyClass(template, view);
