@@ -1,6 +1,13 @@
 Changelog
 =========
 
+0.1.2 (beta)
+-------------------
+
+- Correct size for TinyMCE body.
+- Breadbrumb, logo overlap fixed
+- Portlet headers always white.
+
 0.1.1 (beta)
 -------------------
 
