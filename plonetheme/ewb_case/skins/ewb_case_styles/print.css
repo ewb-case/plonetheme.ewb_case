@@ -25,7 +25,9 @@ a {
 
 .documentDescription {
 	font-weight: bold;
+	padding-bottom:0.4em;
 }
+
 pre {
 	border: 1pt dotted black;
 	white-space: pre;
@@ -58,6 +60,10 @@ div.pageBreak {
 }
 #content .documentDescription, #content #description {
     margin:0.5em 0 1.31em;
+}
+
+#content img {
+    max-width: 100%;
 }
 
 /* Uncomment these if you want link addresses inserted along with the link text

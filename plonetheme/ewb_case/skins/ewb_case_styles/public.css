@@ -106,7 +106,7 @@ q {
 
 #width-portal-wrapper {
     margin: 0 auto;
-    max-width: 60em;
+    width: 60em;
 }
 
 
@@ -732,6 +732,10 @@ dl.portlet a:hover {
 #content span.link-external a {
     background: transparent url(link_icon.png) 0px 1px no-repeat;
     padding: 1px 0px 1px 16px;
+}
+
+#content img {
+    max-width: 100%;
 }
 
 #category {
