@@ -2,6 +2,12 @@ Changelog
 =========
 
 
+0.1.4 (beta)
+-------------------
+- Page min-width.
+- Content images max 100% width.
+
+
 0.1.3 (beta)
 -------------------
 - Correct size for TinyMCE body.
